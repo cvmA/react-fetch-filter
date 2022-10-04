@@ -38,10 +38,15 @@ const App = () => {
         <option value='Brazil'>Brasil</option>
         <option value='Japan'>Japão</option>
       </select>
-      <input placeholder='Pesquise um nome...' className='input-search' type="text" onChange={(event) => {
-        setInputName(event.target.value)
-        console.log(inputName)
-      }}></input>
+      <input
+        placeholder='Pesquise um nome...'
+        className='input-search'
+        type="text"
+        onChange={(event) => {
+          setInputName(event.target.value)
+          console.log(inputName)
+        }}
+      />
       </div>
       <div className='cards-container'>
         {universities.map(({ name, country, web_pages }) => (
