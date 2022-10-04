@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgb(26, 25, 43);
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.universities-title-container{
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.select-country{
+  background-color: #0563af;
+  color: white;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.input-search{
+  width: 250px;
+  padding-left: 10px;
+}
+.cards-container{
+  max-width: 1500px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.card{
   display: flex;
   flex-direction: column;
+  border: 3px solid rgb(215, 194, 253);
+  border-radius: 9px;
+  width: 310px;
+  height: 220px;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(87, 78, 134);
 }
-
-.App-link {
-  color: #61dafb;
+.card h2{
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: aliceblue;
+  font-size: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card p{
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: 500;
+}
+.card a{
+  text-decoration: none;
+  color: #3ca7ff;
+  font-weight: 500;
+  padding-bottom: 30px;
+  font-size: 17px;
 }
