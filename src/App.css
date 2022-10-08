@@ -7,21 +7,7 @@ body{
   justify-content: center;
   color: rgb(255, 255, 255);
 }
-.form-container{
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 50px;
-}
-.select-country{
-  background-color: #0563af;
-  color: white;
-  padding: 12px;
-  width: 250px;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-}
+
 .input-search{
   width: 250px;
   padding-left: 10px;
@@ -31,7 +17,7 @@ body{
   width: 95%;
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
 }
@@ -42,14 +28,14 @@ body{
   border-radius: 9px;
   width: 310px;
   height: 220px;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: rgb(87, 78, 134);
 }
 .card h2{
   padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: aliceblue;
   font-size: 20px;
 }

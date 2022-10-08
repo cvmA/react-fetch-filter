@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Form from './components/Form';
+import Title from './components/Title';
 
 const apiURL = 'http://universities.hipolabs.com/search?name='
 
@@ -23,31 +25,11 @@ const App = () => {
   return (
     <>
     <div className='universities-title-container'>
-      <h1>
-        {selectedCountry 
-          ? `Universidades em ${selectedCountry}`
-          : 'Escolha um país'
-        }
-      </h1>
+      <Title selectedCountry={selectedCountry} />
       </div>
-      <div className='form-container'>
-      <select className='select-country' onChange={(event) => {
-        setSelectedCountry(event.target.value)
-      }}>
-        <option selected disabled>Selecione um país</option>
-        <option value='Brazil'>Brasil</option>
-        <option value='Japan'>Japão</option>
-      </select>
-      <input
-        placeholder='Pesquise um nome...'
-        className='input-search'
-        type="text"
-        onChange={(event) => {
-          setInputName(event.target.value)
-          console.log(inputName)
-        }}
-      />
-      </div>
+      <Form setSelectedCountry={setSelectedCountry}
+            setInputName={setInputName}
+            />
       <div className='cards-container'>
         {universities.map(({ name, country, web_pages }) => (
           <div className='card'>
