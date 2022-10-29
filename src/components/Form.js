@@ -1,6 +1,7 @@
 import React from 'react';
+
 import './Form.css'
-const Form = ( {setSelectedCountry},{setInputName}) => {
+const Form = ( {setSelectedCountry ,setInputName}) => {
     return (
         <div className='form-container'>
         <select className='select-country' onChange={(event) => {
@@ -22,5 +23,4 @@ const Form = ( {setSelectedCountry},{setInputName}) => {
         </div>
     );
 }
- 
 export default Form;
